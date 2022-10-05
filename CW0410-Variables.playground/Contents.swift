@@ -45,3 +45,12 @@ var stringEquation = "\n6x + 15y = 39"
 var res1 = "\(num25)x - \(num15)y = 85"
 var totalRes = res1 + stringEquation
 print(totalRes)
+
+
+func greeting(person: String) -> String {
+    let greeting = "Hello, " + person
+    return greeting
+}
+
+var res = greeting(person: "Olzhas")
+print(res)
