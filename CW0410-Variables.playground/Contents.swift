@@ -10,6 +10,8 @@ for item in myString {
     print(item)
 }
 
+print("Number of charaters is \(myString.count)")
+
 print("entire array")
 for index in 1...20 {
     print(index)
@@ -35,3 +37,11 @@ for index in 1...20 {
         print("\(index)")
     }
 }
+
+var num25 = 25
+var num15 = 15
+var stringEquation = "\n6x + 15y = 39"
+
+var res1 = "\(num25)x - \(num15)y = 85"
+var totalRes = res1 + stringEquation
+print(totalRes)
