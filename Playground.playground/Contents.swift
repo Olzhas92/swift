@@ -1,40 +1,41 @@
 import UIKit
 
-var s = 5
-s += 6
-print("s is \(s)")
+// Task 1
+func maxFunc(myArr: [Int]) -> Void {
+    var max = myArr[0]
+    for item in myArr {
+        if(item > max) {
+            max = item
+        }
+    }
+    print("max is \(max)")
+}
+maxFunc(myArr: [7,8,9])
 
-var age = 30
 
-if age > 18 {
-    print("i'm older")
-} else {
-    print("i'm younger")
+// Task 2
+func myFunc(myChar: String, num1: Int, num2: Int) -> Void {
+    switch myChar {
+    case "+": print(num1 + num2)
+    case "-": print(num1 - num2)
+    case "*": print(num1 * num2)
+    case ":":
+        if(num2 > 0) {
+            print(num1 / num2)
+        } else {
+            print("the number can not be divided by 0")
+        }
+    default:
+        print("something went wrong")
+    }
 }
 
-var num1 = 9
-var num2 = 10
-var num3 = 9
+myFunc(myChar:":", num1: 10, num2: 0)
 
-if (num1 == num2 || num2 == num3 || num1 == num3) {
-    print("there are even numbers")
-} else {
-    print("there are no even numbers")
+// Task 3
+func triangleFunc(A: Int, B:Int, C:Int) -> Int {
+    var perimeter: Int
+    perimeter = A + B + C
+    return perimeter
 }
-
-let months = ["january": 1, "february": 2, "march": 3, "april": 4, "may": 5, "june": 6, "july": 7, "august": 8,
-              "september": 9, "october": 10, "november": 11, "december": 12]
-
-for (month, number) in months {
-    print("\(month) is \(number)")
-}
-
-print("\n")
-print(age > 18 ? true: false)
-
-print(num1 == num2 ? "even": "not even")
-
-var num4 = 30
-var res = num4 % 2
-print(res == 0 ? "the number is even" : "the number is not even")
-
+print(triangleFunc(A: 5, B: 6, C: 7))
