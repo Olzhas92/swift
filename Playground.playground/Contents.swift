@@ -28,3 +28,13 @@ let months = ["january": 1, "february": 2, "march": 3, "april": 4, "may": 5, "ju
 for (month, number) in months {
     print("\(month) is \(number)")
 }
+
+print("\n")
+print(age > 18 ? true: false)
+
+print(num1 == num2 ? "even": "not even")
+
+var num4 = 30
+var res = num4 % 2
+print(res == 0 ? "the number is even" : "the number is not even")
+
