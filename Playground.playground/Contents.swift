@@ -86,15 +86,15 @@ func myElectricityBills(myUnit: Double) -> Double {
         res = (myUnit * 0.50) + percents
     }
     else if(myUnit > 50 && myUnit < 100) {
-        let percents: Double = ((myUnit * 0.50) / 20) * 100
+        let percents: Double = ((myUnit * 0.75) / 20) * 100
         res = (myUnit * 0.75) + percents
     }
     else if (myUnit > 100 && myUnit < 250) {
-        let percents: Double = ((myUnit * 0.50) / 20) * 100
+        let percents: Double = ((myUnit * 1.20) / 20) * 100
         res = (myUnit * 1.20) + percents
     }
     else if (myUnit >= 250) {
-        let percents: Double = ((myUnit * 0.50) / 20) * 100
+        let percents: Double = ((myUnit * 1.50) / 20) * 100
         res = (myUnit * 1.50) + percents
     }
     return res
